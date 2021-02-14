@@ -29,9 +29,7 @@ public class MainApp {
       userService.add(u3);
 
       List<User> list = userService.listUsers();
-      for (User user : list) {
-         System.out.println(user.toString());
-      }
+      list.forEach(System.out::println);
 
       System.out.println(userService.getUserByCar("Porshche Taycan 4s", 9118964));
 
